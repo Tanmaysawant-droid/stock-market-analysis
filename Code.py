@@ -44,7 +44,7 @@ print("Volatility (Std Dev):", float(std_return))
 
 plt.figure(figsize=(10,5))
 
-plt.plot(data["Daily Return"], linewidth=1.5)
+plt.plot(data["Daily Return"], linewidth=1.5, color = "purple")
 plt.title("Daily Returns of Reliance Stock", size=20)
 plt.xlabel("Date", size=15)
 plt.ylabel("Daily Return(%)", size=15)
@@ -72,7 +72,7 @@ print("R-squared:", r_value**2)
 # Trendplot
 plt.figure(figsize=(12,6))
 
-plt.plot(x, y, label="Close Price")
+plt.plot(x, y, label="Close Price", color = "red")
 plt.plot(x, trend_line, label="Trend Line", linestyle="--")
 plt.title("Stock Trend Analysis (Regression)", size = 20)
 plt.xlabel("Date", size = 15)
